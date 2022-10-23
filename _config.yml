@@ -22,8 +22,8 @@ cusdis:
 user:
   name: whfox
   pic: /assets/img/cat.jpg
-  picAlt: "catbook"
-  job: a category-centric theme
+  picAlt: "whfox"
+  job: some records
   aboutme: true # comment this out if you don't need the 'about' page.
 
 exclude:
