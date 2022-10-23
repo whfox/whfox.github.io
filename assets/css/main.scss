@@ -584,6 +584,7 @@ img {
 
     a {
         color: var(--post_link);
+        word-break: break-word;
 
         &:hover,
         &:focus {
@@ -611,6 +612,7 @@ img {
         border-radius: 5px;
         font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
         font-size: .85rem;
+        word-break: break-word;
     }
 
     pre code {
