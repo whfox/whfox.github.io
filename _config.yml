@@ -15,9 +15,9 @@ timezone:
 favicon: /assets/img/favicon.ico
 
 google_analytics: #UA—XXXXXXXX-X
-disqus_shortname:disqus_YYZyJWS5dn #disqus shortname
+disqus_shortname:
 cusdis:
-    app_id:d967a066-8a95-40db-b511-f8aa69477155 #your cusdis app_id
+    app_id: d967a066-8a95-40db-b511-f8aa69477155
 
 user:
   name: whfox
