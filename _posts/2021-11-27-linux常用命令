@@ -1,0 +1,33 @@
+不用就忘，烦了
+
+
+<!--more-->
+
+----------
+#####查内核####
+```linux
+uname -a
+arch
+```
+####进程相关####
+```linux
+pstree -asp pid    //父进程
+lsof -i tcp:port   //占用端口的进程
+netstat -tanlp     //所有端口占用查询
+kill -9 pid        //杀死进程
+```
+####wifi配置####
+```linux
+yum install NetworkManager-tui
+sudo systemctl restart NetworkManager.service
+```
+
+####用户登录####
+```linux
+who           //当前登录用户信息
+w             //当前登录用户名及其执行的任务
+users         //当前登录用户名
+last          //当前与过去登录系统用户信息
+lastb         //登录系统失败用户信息
+lastlog       //用户最后一次登录信息
+```
