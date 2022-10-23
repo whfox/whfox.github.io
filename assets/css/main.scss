@@ -199,9 +199,9 @@ img {
 }
 
 ::-webkit-scrollbar-thumb {
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(192, 192, 192, 1);
     -webkit-border-radius: 0px;
-    border-radius: 0px;
+    border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:window-inactive {
@@ -602,7 +602,7 @@ img {
         display: block;
         padding: 1rem;
         overflow-x: scroll;
-        border-radius: 10px;
+        border-radius: 6px;
         white-space: pre;
     }
 
