@@ -21,7 +21,7 @@ cusdis:
 
 user:
   name: whfox
-  pic: /assets/img/cat.jpg
+  pic: http://tva1.sinaimg.cn/large/007aNvkTgy1h7gdywx7j7j31jj1jkq91.jpg
   picAlt: "whfox"
   job: 不说话装高手
   aboutme: true # comment this out if you don't need the 'about' page.
