@@ -14,8 +14,7 @@ timezone:
 
 favicon: /assets/img/favicon.ico
 
-google_analytics: G-0KM5VCH288
-#UA—XXXXXXXX-X
+google_analytics: #UA—XXXXXXXX-X
 
 disqus_shortname:
 cusdis:

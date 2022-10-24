@@ -1,4 +1,14 @@
-<!-- js from https://codepen.io/MrGrigri/pen/XQmWBv -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-0KM5VCH288"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-0KM5VCH288');
+</script>
+
+<!-- run time -->
 <script>
 var BootDate = new Date("2021/10/23 15:00:00");
 function ShowRunTime(id) {
@@ -14,6 +24,7 @@ document.getElementById(id).innerHTML = "本站已运行 " + RunTime;
 setInterval("ShowRunTime('RunTime')", 1000);  
 </script>
 
+<!-- js from https://codepen.io/MrGrigri/pen/XQmWBv -->
 <script>
 // @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&dn=expat.txt Expat
     const themePreference = () => {
