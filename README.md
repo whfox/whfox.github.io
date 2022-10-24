@@ -1,7 +1,5 @@
 # Whfox's website
-<img src="https://raw.githubusercontent.com/sagar-viradiya/sagar-viradiya/master/resources/banner.png" alt="Glad to see you :)">
+Glad to see you :)
 
-<p align="center"> 
-  Visitor count<br>
-  <img src="https://profile-counter.glitch.me/sagar-viradiya/count.svg" />
-</p>
+ ![visitors](https://visitor-badge.glitch.me/badge?page_id=whfox.visitor-badge)
+
