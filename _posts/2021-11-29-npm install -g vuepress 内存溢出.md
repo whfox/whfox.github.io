@@ -1,3 +1,9 @@
+---
+title: npm install -g vuepress 内存溢出
+categories: [Linux]
+comments: true
+---
+
 　　本想折腾折腾树莓派，写个vuepress玩玩，结果一直报错JavaScript heap out of memory。查完资料发现至少需要1.4G内存，就试着改package.json的build要求，结果还是不行。
 
 
