@@ -22,6 +22,7 @@ layout: page
   </div>
   <div class="post_content">
     {{ content }}
+    {% include toc.html html=content %}
   </div>
   
 
@@ -30,7 +31,6 @@ layout: page
 
     {% include disqus.html username = site.disqus.shortname %}
     {% include cusdis.html %}
-    {% include toc.html html=content %}
 
   </div>
   {% endif %}
