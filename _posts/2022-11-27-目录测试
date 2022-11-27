@@ -1,0 +1,48 @@
+---
+title: 目录测试
+categories: [Linux]
+comments: true
+---
+
+* 目录111
+{:toc #markdown-toc}	
+
+ASF挂卡部署，非搬运且亲测有效。
+
+
+<!--more-->
+# 一、如何下载ASF #
+## 1.下载ASF对应版本 ##
+　　首先你需要确定自己的系统环境，这里我采用的是centos7.6，即linux64位系统作为演示。第一步进入github查看最新的ASF版本，链接如下：
+[`https://github.com/JustArchiNET/ArchiSteamFarm/releases`](https://github.com/JustArchiNET/ArchiSteamFarm/releases)  
+点击进入最新版本，最下方找到适合自己系统的版本。其中linux64位的链接如下：
+[`https://github.com/JustArchiNET/ArchiSteamFarm/releases/download/5.2.0.5/ASF-linux-x64.zip`](https://github.com/JustArchiNET/ArchiSteamFarm/releases/download/5.2.0.5/ASF-linux-x64.zip)  
+　　github国内被墙了进不去可以访问国内的镜像版本，把github.com换成hub.fastgit.org，剩下的链接不变即可。
+## 2.配置ASF ##
+　　点击以下链接进入配置[ASF 配置文件生成器][1]
+大佬请随意修改，最简单的配置方法如下：点第三个机器人，机器人名称随便填，账号密码常规操作，最下面有enabled都打开，高级设置可以不管，最后下载出一个json文件，把它保存好。
+# 三、如何部署ASF #
+　　不管是win还是linux，先解压最开始的ASF压缩包，将生成的json文件放进config文件夹，这样其实就可以运行了。（文件上传linux服务器...这个...我就不讲了吧）
+　　但是！依旧是国内steam社区被墙的原因，我们还需要另一个社区服务代理。win的选择比较多，uu加速器、302community等都可以用。linux系统请下载这个文件：[提取码：milk][2] （链接失效可以联系我）。找到对应系统版本，下载完传服务器。
+# 四、开始白嫖 #
+首先运行社区代理，cd进入所在文件夹后
+```shell
+chmod +x ascf
+./ascf
+```
+挂在后台，再打开一个shell窗口
+```shell
+cd asf
+chmod +x ArchiSteamFarm
+./ArchiSteamFarm --ignore-unsupported-environment
+```
+然后就成功啦
+![asf挂卡][3]
+
+
+----------
+此外还有一些要注意的内容:
+
+ 1. 如果不能或者不想多开shell命令窗口，可以安装tmux分屏软件。
+ 2. 第一次运行ASF时可能需要令牌，注意查收邮箱。
+ 3. ASF运行时，不影响steam继续运行，会暂时中断直到空闲状态。
