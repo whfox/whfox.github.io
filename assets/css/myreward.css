@@ -19,7 +19,6 @@
 
 .reward .reward-button {
     font-size: 15px;
-    line-height: 58px;
     position: relative;
     display: block;
     width: fit-content;
@@ -32,17 +31,19 @@
 }
 
 .reward .reward-code {
-	position: absolute;
-	top: -220px;
-	left: 50%;
-	display: none;
-	width: 350px;
-	height: 200px;
-	margin-left: -175px;
-	padding: 15px;
-	border: 1px solid #e6e6e6;
-	background: #fff;
-	box-shadow: 0 1px 1px 1px #efefef
+    position: absolute;
+    top: -210px;
+    left: 50%;
+    display: none;
+    width: 350px;
+    height: 200px;
+    margin-left: -175px;
+    padding: 15px;
+    border: 1px solid #e6e6e6;
+    background: #fff;
+    box-shadow: var(--pane-box-shadow);
+    z-index: 999;
+    border-radius: 4px;
 }
 
 .reward .reward-button:hover .reward-code {
