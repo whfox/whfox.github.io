@@ -706,14 +706,14 @@ img {
 
 #back-top {
   position: fixed;
-  bottom: 30px;
-  margin-left: 1040px;
+  bottom: 15px;
+  margin-left: 95%;
 }
 #back-top a {
-  width: 54px;
-  height: 54px;
+  width: 30px;
+  height: 30px;
   display: block;
-  background: #ddd url(../img/bgs/bg_up_arrow.png) no-repeat center center;
+  background: #ddd url(/assets/img/bg_up_arrow.png) no-repeat center center;
   background-color: #aaa;
   -webkit-border-radius: 7px;
   -moz-border-radius: 7px;
