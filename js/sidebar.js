@@ -38,13 +38,13 @@ $(function() {
 	$(window).bind('scroll',locateCatelogList); 
 	/*侧标栏的显示,关闭及鼠标点击时的切换*/
 	$('#totoro_fixed').click(function(){
-			$('#right_sidebar').animate({right:"=-300px"},300);
-			$('#content').animate({right:'=-150px'},300);
+			$('#right_sidebar').animate({right:"+=300px"},300);
+			$('#content').animate({left:'-=150px'},300);
 			$('#sidebar_close').show();
 	});
 	$('#sidebar_close').click(function(){
-		$('#right_sidebar').animate({right:"=0px"},300);
-		$('#content').animate({right:'=150px'},300);
+		$('#right_sidebar').animate({right:"-=300px"},300);
+		$('#content').animate({left:'+=150px'},300);
 		$(this).hide();
 	});
 	$('.a_catelog').click(function(){
