@@ -37,7 +37,7 @@ $(function() {
 	/*绑定滚动事件 */ 
 	$(window).bind('scroll',locateCatelogList); 
 	/*侧标栏的显示,关闭及鼠标点击时的切换*/
-	$('#totoro_fixed').find('img').mouseenter(function(){
+	$('#totoro_fixed').click(function(){
 			$('#right_sidebar').animate({right:"+=300px"},300);
 			$('#content').animate({left:'-=150px'},300);
 			$('#sidebar_close').show();
