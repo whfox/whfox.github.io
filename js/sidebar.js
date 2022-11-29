@@ -7,6 +7,7 @@ function showCatelog(){
 		$('div.sidebar_catelog').hide();
 		$('div.sidebar_index').show();
 		$('#sidebar_close').hide();
+		$('#totoro_fixed').hide();
 	}else if($(window).width() >= 1200){
 		$('.sidebar_catelog').html('<ul class="list_catelog">' + $('#markdown-toc').html() + '</ul>');
 		$('#right_sidebar').animate({right:"+=300px"},300);
@@ -15,6 +16,7 @@ function showCatelog(){
 		$('.a_catelog').addClass('active');
 		$('div.sidebar_index').hide();
 		$('div.sidebar_catelog').show();
+		$('#totoro_fixed').show();
 	}
 }
 /*文章目录跟随定位*/
