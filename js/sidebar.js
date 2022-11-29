@@ -83,3 +83,21 @@ $(function() {
 			$(this).css('font-size','-=2px');
 		});
 	}
+/*鼠标下滚导航栏消失，上滚导航栏出现*/
+	$(window).scroll(function(){
+		var scroll_top = $(document).scrollTop();
+		if(scroll_top > 100){
+			$('#main nav').hide();
+		}else{
+			$('#main nav').show();
+		}
+		if(scroll_top >500) {
+			$('#back-top').show();
+		}else{
+			$('#back-top').hide();
+		}
+    })
+	$('#back-top').click(function(){
+		$(document).scrollTop(0);
+	});
+});
