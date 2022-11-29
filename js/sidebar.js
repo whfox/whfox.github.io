@@ -1,7 +1,6 @@
 /*侧边栏显示、切换等*/
 function showCatelog(){
 	$('#markdown-toc').hide();
-	$('#back-top').hide();
 	if (typeof $('#markdown-toc').html() === 'undefined') {
 		$('.a_catelog').addClass('active');
 		$('div.sidebar_catelog').hide();
@@ -87,9 +86,9 @@ $(function() {
 	$(window).scroll(function(){
 		var scroll_top = $(document).scrollTop();
 		if(scroll_top >500) {
-			$('#back-top').show();
+			$('#back-top').animate({right:"5px"});
 		}else{
-			$('#back-top').hide();
+			$('#back-top').animate({right:"-50px"});
 		}
     })
 	$('#back-top').click(function(){
