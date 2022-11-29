@@ -9,7 +9,7 @@ function showCatelog(){
 	}else {
 		$('.sidebar_catelog').html('<ul class="list_catelog">' + $('#markdown-toc').html() + '</ul>');
 		$('.a_catelog').addClass('active');
-		$('#sidebar_close').hide();
+		$('#sidebar_close').show();
 		$('div.sidebar_catelog').show();
 		$('sidebar_catelog').show();
 		$('#totoro_fixed').show();
