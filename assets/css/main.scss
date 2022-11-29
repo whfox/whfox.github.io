@@ -768,11 +768,13 @@ img {
 #right_sidebar {
 	top: 0;
 	bottom: 0;
+	margin-right:3px;
 	right: -300px;
 	position: fixed;
 	width:300px;
 	z-index:9999;
-	background-color:#fff;
+	border-radius: 10px;
+	background-color: var(--content_bg);
 	border-left:1px solid #ddd;
 	-webkit-border-radius: 2px;
 	-moz-border--radius: 2px;
@@ -782,10 +784,6 @@ img {
 	box-shadow: 0px 0px 10px 2px #ddd;
 	overflow-x:hidden;
 	overflow-y:auto;
-	background: -webkit-linear-gradient(right,#fff, #f8f8f8); 
-	background: -o-linear-gradient(right,#fff, #f8f8f8); 
-	background: -moz-linear-gradient(right,#fff, #f8f8f8); 
-	background: linear-gradient(to right,#fff, #f8f8f8); 
 }
 /*文章目录*/
 .sidebar_catelog ul{
@@ -793,11 +791,10 @@ img {
 	list-style:none;
 }
 .sidebar_catelog li a{
-	color:#666;
+	color: var(--nav_font);
 	font-size:16px;
 	font-weight:100;
 	letter-spacing:1px;
-	font-family:'Microsoft JhengHei';
 	text-decoration:none;
 }
 .sidebar_catelog li .list_click{
