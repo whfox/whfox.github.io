@@ -2,23 +2,18 @@
 function showCatelog(){
 	$('#markdown-toc').hide();
 	if (typeof $('#markdown-toc').html() === 'undefined') {
-		$('.a_catelog').removeClass('active');
-		$('.a_bloginfo').addClass('active');
+		$('.a_catelog').addClass('active');
 		$('div.sidebar_catelog').hide();
-		$('div.sidebar_index').show();
 		$('#sidebar_close').hide();
 		$('#totoro_fixed').hide();
-		$('#back-top').hide();
 	}else if($(window).width() >= 1200){
 		$('.sidebar_catelog').html('<ul class="list_catelog">' + $('#markdown-toc').html() + '</ul>');
 		$('#right_sidebar').animate({right:"+=300px"},300);
 		$('#content').animate({left:'-=150px'},300);
-		$('.a_bloginfo').removeClass('active');
 		$('.a_catelog').addClass('active');
-		$('div.sidebar_index').hide();
+		$('#sidebar_close').hide();
 		$('div.sidebar_catelog').show();
 		$('#totoro_fixed').show();
-		$('#back-top').show();
 	}
 }
 /*文章目录跟随定位*/
