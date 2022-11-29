@@ -784,9 +784,16 @@ img {
 	overflow-y:auto;
 }
 /*文章目录*/
-.sidebar_catelog ul{
-	margin:0;
-	list-style:none;
+ul {
+    padding-left: 8px;
+}
+ul.list_catelog {
+    margin-top: 50px;
+}
+.sidebar_catelog ul li {
+    margin: 0;
+    list-style: none;
+    padding: 5px 5px;
 }
 .sidebar_catelog li a{
 	color: var(--nav_font);
