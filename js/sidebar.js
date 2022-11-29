@@ -8,8 +8,6 @@ function showCatelog(){
 		$('#totoro_fixed').hide();
 	}else if($(window).width() >= 1200){
 		$('.sidebar_catelog').html('<ul class="list_catelog">' + $('#markdown-toc').html() + '</ul>');
-		$('#right_sidebar').animate({right:"+=300px"},300);
-		$('#content').animate({left:'-=150px'},300);
 		$('.a_catelog').addClass('active');
 		$('#sidebar_close').hide();
 		$('div.sidebar_catelog').show();
