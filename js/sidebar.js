@@ -11,6 +11,7 @@ function showCatelog(){
 		$('.a_catelog').addClass('active');
 		$('#sidebar_close').hide();
 		$('div.sidebar_catelog').show();
+		$('sidebar_catelog').show();
 		$('#totoro_fixed').show();
 	}
 }
