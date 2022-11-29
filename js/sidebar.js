@@ -93,7 +93,7 @@ $(function() {
 		}else{
 			$('#main nav').show();
 		}
-		if(scroll_top >500) {
+		if(scroll_top >100) {
 			$('#back-top').show();
 		}else{
 			$('#back-top').hide();
