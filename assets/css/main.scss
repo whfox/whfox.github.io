@@ -745,6 +745,14 @@ img {
 }
 
 
+/*目录按钮图片*/
+#totoro_fixed img{
+	width: 100px;
+	position: fixed;
+	/* right: 50px; */
+	bottom: 70px;
+	z-index:9997;
+}
 /*右侧边栏*/
 #right_sidebar {
 	top: 0;
