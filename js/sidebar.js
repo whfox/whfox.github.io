@@ -86,6 +86,7 @@ $(function() {
 	$(window).scroll(function(){
 		var scroll_top = $(document).scrollTop();
 		if(scroll_top >500) {
+		    $('#back-top').show();
 			$('#back-top').animate({right:"5px"});
 		}else{
 			$('#back-top').hide();
