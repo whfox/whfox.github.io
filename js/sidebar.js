@@ -1,6 +1,7 @@
 /*侧边栏显示、切换等*/
 function showCatelog(){
 	$('#markdown-toc').hide();
+	$('#back-top').hide();
 	if (typeof $('#markdown-toc').html() === 'undefined') {
 		$('.a_catelog').addClass('active');
 		$('div.sidebar_catelog').hide();
@@ -84,7 +85,6 @@ $(function() {
 	}
 /*鼠标下滚导航栏消失，上滚导航栏出现*/
 	$(window).scroll(function(){
-	    $('#back-top').hide();
 		var scroll_top = $(document).scrollTop();
 		if(scroll_top >500) {
 			$('#back-top').show();
