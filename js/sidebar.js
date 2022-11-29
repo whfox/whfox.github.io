@@ -6,7 +6,7 @@ function showCatelog(){
 		$('div.sidebar_catelog').hide();
 		$('#sidebar_close').hide();
 		$('#totoro_fixed').hide();
-	}else if($(window).width() >= 1200){
+	}else {
 		$('.sidebar_catelog').html('<ul class="list_catelog">' + $('#markdown-toc').html() + '</ul>');
 		$('.a_catelog').addClass('active');
 		$('#sidebar_close').hide();
