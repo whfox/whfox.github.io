@@ -38,12 +38,12 @@ $(function() {
 	$('#totoro_fixed').click(function(){
 			$('#right_sidebar').animate({right:"+=300px"},300);
 			$('#content').animate({left:'-=150px'},300);
-			$('#sidebar_close').animate({right:"+=50px"},500);
+			$('#sidebar_close').animate({right:"+=50px"},400);
 	});
 	$('#sidebar_close').click(function(){
 		$('#right_sidebar').animate({right:"-=300px"},300);
 		$('#content').animate({left:'+=150px'},300);
-		$(this).animate({right:"-=50px"},500);
+		$(this).animate({right:"-=50px"},400);
 		//$(this).hide();
 	});
 	$('.a_catelog').click(function(){
