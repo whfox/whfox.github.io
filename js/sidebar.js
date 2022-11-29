@@ -88,7 +88,7 @@ $(function() {
 		if(scroll_top >500) {
 			$('#back-top').animate({right:"5px"});
 		}else{
-			$('#back-top').animate({right:"-50px"});
+			$('#back-top').hide();
 		}
     })
 	$('#back-top').click(function(){
