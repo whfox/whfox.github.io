@@ -803,10 +803,8 @@ ul.list_catelog {
 	letter-spacing:1px;
 	text-decoration:none;
 }
-.sidebar_catelog li .list_click{
-	color:#1874CD;
-	text-shadow: 0 0 1px #8EE5EE;
-	border-bottom:1px dashed #1874CD;
+.sidebar_catelog li a :hover {
+    color: var(--nav_font_hover);
 }
 /*关闭侧边栏*/
 #sidebar_close {
