@@ -5,14 +5,14 @@ function showCatelog(){
 		$('.a_catelog').addClass('active');
 		$('div.sidebar_catelog').hide();
 		$('#sidebar_close').hide();
-		$('#totoro_fixed').hide();
 	}else {
 		$('.sidebar_catelog').html('<ul class="list_catelog">' + $('#markdown-toc').html() + '</ul>');
 		$('.a_catelog').addClass('active');
 		$('#sidebar_close').show();
 		$('div.sidebar_catelog').show();
 		$('sidebar_catelog').show();
-		$('#totoro_fixed').show();
+		//$('#totoro_fixed').show();
+		$('#totoro_fixed').animate({right:"5px"});
 	}
 }
 /*文章目录跟随定位*/
