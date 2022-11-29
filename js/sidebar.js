@@ -43,7 +43,8 @@ $(function() {
 	$('#sidebar_close').click(function(){
 		$('#right_sidebar').animate({right:"-=300px"},300);
 		$('#content').animate({left:'+=150px'},300);
-		$(this).hide();
+		$(this).animate({right:"-=20px"},300);
+		//$(this).hide();
 	});
 	$('.a_catelog').click(function(){
 		$('.a_bloginfo').removeClass('active');
