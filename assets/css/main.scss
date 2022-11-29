@@ -802,9 +802,10 @@ img {
 }
 /*关闭侧边栏*/
 #sidebar_close {
-	position: fixed;
-	bottom: 20px;
-	right: 30px;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    width: 30px;
 }
 /*category*/
 .list-category  .list_category {
