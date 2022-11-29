@@ -84,6 +84,7 @@ $(function() {
 	}
 /*鼠标下滚导航栏消失，上滚导航栏出现*/
 	$(window).scroll(function(){
+	    $('#back-top').hide();
 		var scroll_top = $(document).scrollTop();
 		if(scroll_top >500) {
 			$('#back-top').show();
