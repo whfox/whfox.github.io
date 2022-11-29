@@ -92,12 +92,12 @@ $(function() {
 			$('#main nav').show();
 		}
 		if(scroll_top >500) {
-			$('#side_to_top').show();
+			$('#back-top').show();
 		}else{
-			$('#side_to_top').hide();
+			$('#back-top').hide();
 		}
     })
-	$('#side_to_top').click(function(){
+	$('#back-top').click(function(){
 		$(document).scrollTop(0);
 	});
 });
