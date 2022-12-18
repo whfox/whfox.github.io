@@ -2,17 +2,861 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Posts on Whfox&#39;s Blog</title>
-        <link>http://example.org/post/</link>
+        <link>https://whfox.ml/post/</link>
         <description>Recent content in Posts on Whfox&#39;s Blog</description>
         <generator>Hugo -- gohugo.io</generator>
-        <language>zh-cn</language>
-        <lastBuildDate>Sat, 17 Dec 2022 20:31:48 +0800</lastBuildDate><atom:link href="http://example.org/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <language>zh-CN</language>
+        <lastBuildDate>Sat, 17 Dec 2022 20:31:48 +0800</lastBuildDate><atom:link href="https://whfox.ml/post/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Test</title>
-        <link>http://example.org/post/test/</link>
+        <link>https://whfox.ml/p/test/</link>
         <pubDate>Sat, 17 Dec 2022 20:31:48 +0800</pubDate>
         
-        <guid>http://example.org/post/test/</guid>
+        <guid>https://whfox.ml/p/test/</guid>
         <description></description>
+        </item>
+        <item>
+        <title>ASF挂卡</title>
+        <link>https://whfox.ml/p/asf%E6%8C%82%E5%8D%A1/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>https://whfox.ml/p/asf%E6%8C%82%E5%8D%A1/</guid>
+        <description>&lt;p&gt;ASF挂卡部署，非搬运且亲测有效。&lt;/p&gt;
+&lt;h1 id=&#34;一如何下载asf&#34;&gt;一、如何下载ASF&lt;/h1&gt;
+&lt;h2 id=&#34;1下载asf对应版本&#34;&gt;1.下载ASF对应版本&lt;/h2&gt;
+&lt;p&gt;　　首先你需要确定自己的系统环境，这里我采用的是centos7.6，即linux64位系统作为演示。第一步进入github查看最新的ASF版本，链接如下：
+&lt;a class=&#34;link&#34; href=&#34;https://github.com/JustArchiNET/ArchiSteamFarm/releases&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;&lt;code&gt;https://github.com/JustArchiNET/ArchiSteamFarm/releases&lt;/code&gt;&lt;/a&gt;&lt;br&gt;
+点击进入最新版本，最下方找到适合自己系统的版本。其中linux64位的链接如下：
+&lt;a class=&#34;link&#34; href=&#34;https://github.com/JustArchiNET/ArchiSteamFarm/releases/download/5.2.0.5/ASF-linux-x64.zip&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;&lt;code&gt;https://github.com/JustArchiNET/ArchiSteamFarm/releases/download/5.2.0.5/ASF-linux-x64.zip&lt;/code&gt;&lt;/a&gt;&lt;br&gt;
+　　github国内被墙了进不去可以访问国内的镜像版本，把github.com换成hub.fastgit.org，剩下的链接不变即可。&lt;/p&gt;
+&lt;h2 id=&#34;2配置asf&#34;&gt;2.配置ASF&lt;/h2&gt;
+&lt;p&gt;　　点击以下链接进入配置&lt;a class=&#34;link&#34; href=&#34;https://justarchinet.github.io/ASF-WebConfigGenerator/#/bot&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;ASF 配置文件生成器&lt;/a&gt;
+大佬请随意修改，最简单的配置方法如下：点第三个机器人，机器人名称随便填，账号密码常规操作，最下面有enabled都打开，高级设置可以不管，最后下载出一个json文件，把它保存好。&lt;/p&gt;
+&lt;h1 id=&#34;三如何部署asf&#34;&gt;三、如何部署ASF&lt;/h1&gt;
+&lt;p&gt;　　不管是win还是linux，先解压最开始的ASF压缩包，将生成的json文件放进config文件夹，这样其实就可以运行了。（文件上传linux服务器&amp;hellip;这个&amp;hellip;我就不讲了吧）
+　　但是！依旧是国内steam社区被墙的原因，我们还需要另一个社区服务代理。win的选择比较多，uu加速器、302community等都可以用。linux系统请下载这个文件：&lt;a class=&#34;link&#34; href=&#34;https://pan.baidu.com/s/1qdhMUAigM5Nax8djoOU0WA&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;提取码：milk&lt;/a&gt; （链接失效可以联系我）。找到对应系统版本，下载完传服务器。&lt;/p&gt;
+&lt;h1 id=&#34;四开始白嫖&#34;&gt;四、开始白嫖&lt;/h1&gt;
+&lt;p&gt;首先运行社区代理，cd进入所在文件夹后&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;chmod +x ascf
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;./ascf
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;挂在后台，再打开一个shell窗口&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;cd&lt;/span&gt; asf
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;chmod +x ArchiSteamFarm
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;./ArchiSteamFarm --ignore-unsupported-environment
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;然后就成功啦
+&lt;img src=&#34;http://tva1.sinaimg.cn/large/007aNvkTgy1gynfuvlpd2j30u00lkkba.jpg&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;asf挂卡&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;此外还有一些要注意的内容:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;如果不能或者不想多开shell命令窗口，可以安装tmux分屏软件。&lt;/li&gt;
+&lt;li&gt;第一次运行ASF时可能需要令牌，注意查收邮箱。&lt;/li&gt;
+&lt;li&gt;ASF运行时，不影响steam继续运行，会暂时中断直到空闲状态。&lt;/li&gt;
+&lt;/ol&gt;</description>
+        </item>
+        <item>
+        <title>linux常用命令</title>
+        <link>https://whfox.ml/p/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>https://whfox.ml/p/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</guid>
+        <description>&lt;p&gt;不用就忘，烦了&lt;/p&gt;
+&lt;hr&gt;
+&lt;h5 id=&#34;查内核&#34;&gt;查内核&lt;/h5&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;uname -a
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;arch
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h4 id=&#34;进程相关&#34;&gt;进程相关&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;pstree -asp pid    //父进程
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;lsof -i tcp:port   //占用端口的进程
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;netstat -tanlp     //所有端口占用查询
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;kill&lt;/span&gt; -9 pid        //杀死进程
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h4 id=&#34;wifi配置&#34;&gt;wifi配置&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;yum install NetworkManager-tui
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo systemctl restart NetworkManager.service
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h4 id=&#34;用户登录&#34;&gt;用户登录&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;who           //当前登录用户信息
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;w             //当前登录用户名及其执行的任务
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;users         //当前登录用户名
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;last          //当前与过去登录系统用户信息
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;lastb         //登录系统失败用户信息
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;lastlog       //用户最后一次登录信息
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description>
+        </item>
+        <item>
+        <title>npm install -g vuepress 内存溢出</title>
+        <link>https://whfox.ml/p/npm-install-g-vuepress-%E5%86%85%E5%AD%98%E6%BA%A2%E5%87%BA/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>https://whfox.ml/p/npm-install-g-vuepress-%E5%86%85%E5%AD%98%E6%BA%A2%E5%87%BA/</guid>
+        <description>&lt;p&gt;　　本想折腾折腾树莓派，写个vuepress玩玩，结果一直报错JavaScript heap out of memory。查完资料发现至少需要1.4G内存，就试着改package.json的build要求，结果还是不行。&lt;/p&gt;
+&lt;p&gt;去&lt;a class=&#34;link&#34; href=&#34;https://vuepress.vuejs.org/zh/guide/getting-started.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;官方文档&lt;/a&gt;看看有什么解决的办法。点进去一看，赫然几个大字“我们已经不再推荐全局安装 VuePress”。彳亍，试了下直接装本地依赖，还真成了。
+　　不同的npm安装区别具体如下：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;npm install -D  xxx    // --save-dev把依赖写入进devDependencies对象，用于开发环境
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;npm install -S  xxx    // --save把依赖写入进dependencies对象，用于生产环境
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;npm install -g  xxx    //全局安装
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;npm install xxx        //本地安装，只安装在目录而不记录在package.json中
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description>
+        </item>
+        <item>
+        <title>RSSHub订阅源完整版</title>
+        <link>https://whfox.ml/p/rsshub%E8%AE%A2%E9%98%85%E6%BA%90%E5%AE%8C%E6%95%B4%E7%89%88/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>https://whfox.ml/p/rsshub%E8%AE%A2%E9%98%85%E6%BA%90%E5%AE%8C%E6%95%B4%E7%89%88/</guid>
+        <description>&lt;p&gt;摘选自&lt;a class=&#34;link&#34; href=&#34;https://wzfou.com/rsshub/#:~:text=%E4%B8%89%E3%80%81RSSHub%E6%94%AF%E6%8C%81%E7%9A%84RSS%201%203.1%20bilibili%202%203.2%20Telegram%203,3.6%20%E7%9F%A5%E4%B9%8E%207%203.7%20%E4%BB%8A%E6%97%A5%E5%A4%B4%E6%9D%A1%208%203.8%20V2EX&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;挖矿否&lt;/a&gt;，仅用于记录。&lt;/p&gt;
+&lt;h3 id=&#34;bilibili&#34;&gt;bilibili&lt;/h3&gt;
+&lt;p&gt;番剧&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;举例: &lt;a class=&#34;link&#34; href=&#34;https://rsshub.app/bilibili/bangumi/media/9192&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://rsshub.app/bilibili/bangumi/media/9192&lt;/a&gt; &lt;/p&gt;
+&lt;p&gt;路由: /bilibili/bangumi/media/:mediaid&lt;/p&gt;
+&lt;p&gt;参数:&lt;/p&gt;
+&lt;p&gt;mediaid, 必选 –&lt;br&gt;
+番剧媒体 id, 番剧主页 URL 中获取&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;用户追番列表&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;举例: &lt;a class=&#34;link&#34; href=&#34;https://rsshub.app/bilibili/user/bangumi/208259&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://rsshub.app/bilibili/user/bangumi/208259&lt;/a&gt; &lt;/p&gt;
+&lt;p&gt;路由: /bilibili/user/bangumi/:uid/:type?&lt;/p&gt;
+&lt;p&gt;参数:&lt;/p&gt;
+&lt;p&gt;uid, 必选 –&lt;br&gt;
+用户 id&lt;/p&gt;
+&lt;p&gt;type, 可选 –&lt;br&gt;
+1为番，2为剧，留空为1&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;UP 主投稿&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;举例: &lt;a class=&#34;link&#34; href=&#34;https://rsshub.app/bilibili/user/video/2267573&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://rsshub.app/bilibili/user/video/2267573&lt;/a&gt; &lt;/p&gt;
+&lt;p&gt;路由: /bilibili/user/video/:uid/:disableEmbed?&lt;/p&gt;
+&lt;p&gt;参数:&lt;/p&gt;
+&lt;p&gt;uid, 必选 –&lt;br&gt;
+用户 id, 可在 UP 主主页中找到&lt;/p&gt;
+&lt;p&gt;disableEmbed, 可选 –&lt;br&gt;
+默认为开启内嵌视频, 任意值为关闭&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;UP 主专栏&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;举例: &lt;a class=&#34;link&#34; href=&#34;https://rsshub.app/bilibili/user/article/334958638&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://rsshub.app/bilibili/user/article/334958638&lt;/a&gt; &lt;/p&gt;
+&lt;p&gt;路由: /bilibili/user/article/:uid&lt;/p&gt;
+&lt;p&gt;参数:&lt;/p&gt;
+&lt;p&gt;uid, 必选 –&lt;br&gt;
+用户 id, 可在 UP 主主页中找到&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;UP 主动态&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;举例: &lt;a class=&#34;link&#34; href=&#34;https://rsshub.app/bilibili/user/dynamic/2267573&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://rsshub.app/bilibili/user/dynamic/2267573&lt;/a&gt; &lt;/p&gt;
+&lt;p&gt;路由: /bilibili/user/dynamic/:uid/:disableEmbed?&lt;/p&gt;
+&lt;p&gt;参数:&lt;/p&gt;
+&lt;p&gt;uid, 必选 –&lt;br&gt;
+用户 id, 可在 UP 主主页中找到&lt;/p&gt;
+&lt;p&gt;disableEmbed, 可选 –&lt;br&gt;
+默认为开启内嵌视频, 任意值为关闭&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;UP 主频道&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;举例: &lt;a class=&#34;link&#34; href=&#34;https://rsshub.app/bilibili/user/channel/142821407/49017&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://rsshub.app/bilibili/user/channel/142821407/49017&lt;/a&gt; &lt;/p&gt;
+&lt;p&gt;路由: /bilibili/user/channel/:uid/:cid/:disableEmbed?&lt;/p&gt;
+&lt;p&gt;参数:&lt;/p&gt;
+&lt;p&gt;uid, 必选 –&lt;br&gt;
+用户 id, 可在 UP 主主页中找到&lt;/p&gt;
+&lt;p&gt;cid, 必选 –&lt;br&gt;
+频道 id, 可在频道的 URL 中找到&lt;/p&gt;
+&lt;p&gt;disableEmbed, 可选 –&lt;br&gt;
+默认为开启内嵌视频, 任意值为关闭&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;telegram&#34;&gt;Telegram&lt;/h3&gt;
+&lt;p&gt;频道&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;举例: &lt;a class=&#34;link&#34; href=&#34;https://rsshub.app/telegram/channel/awesomeDIYgod/%23DIYgod&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://rsshub.app/telegram/channel/awesomeDIYgod/%23DIYgod&lt;/a&gt;的豆瓣动态 &lt;/p&gt;
+&lt;p&gt;路由: /telegram/channel/:username/:searchQuery?&lt;/p&gt;
+&lt;p&gt;参数:&lt;/p&gt;
+&lt;p&gt;username, 必选 –&lt;br&gt;
+频道 username&lt;/p&gt;
+&lt;p&gt;searchQuery, 可选 –&lt;br&gt;
+搜索关键词, 如需搜索 tag 请用 %23 替代 #&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;豆瓣&#34;&gt;豆瓣&lt;/h3&gt;
+&lt;p&gt;正在上映的电影&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;举例: &lt;a class=&#34;link&#34; href=&#34;https://rsshub.app/douban/movie/playing&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://rsshub.app/douban/movie/playing&lt;/a&gt; &lt;/p&gt;
+&lt;p&gt;路由: /douban/movie/playing&lt;/p&gt;
+&lt;p&gt;参数: 无&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;正在上映的高分电影&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;举例: &lt;a class=&#34;link&#34; href=&#34;https://rsshub.app/douban/movie/playing/7.5&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://rsshub.app/douban/movie/playing/7.5&lt;/a&gt; &lt;/p&gt;
+&lt;p&gt;路由: /douban/movie/playing/:score&lt;/p&gt;
+&lt;p&gt;参数:&lt;/p&gt;
+&lt;p&gt;score, 必选 –&lt;br&gt;
+返回大于等于这个分数的电影&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;即将上映的电影&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;举例: &lt;a class=&#34;link&#34; href=&#34;https://rsshub.app/douban/movie/later&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://rsshub.app/douban/movie/later&lt;/a&gt; &lt;/p&gt;
+&lt;p&gt;路由: /douban/movie/later&lt;/p&gt;
+&lt;p&gt;参数: 无&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;北美票房榜&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;举例: &lt;a class=&#34;link&#34; href=&#34;https://rsshub.app/douban/movie/ustop&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://rsshub.app/douban/movie/ustop&lt;/a&gt; &lt;/p&gt;
+&lt;p&gt;路由: /douban/movie/ustop&lt;/p&gt;
+&lt;p&gt;参数: 无&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;一周口碑榜&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;举例: &lt;a class=&#34;link&#34; href=&#34;https://rsshub.app/douban/movie/weekly&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://rsshub.app/douban/movie/weekly&lt;/a&gt; &lt;/p&gt;
+&lt;p&gt;路由: /douban/movie/weekly/:type?&lt;/p&gt;
+&lt;p&gt;参数:&lt;/p&gt;
+&lt;p&gt;type, 可选 –&lt;br&gt;
+分类，可在榜单页 URL 中找到，默认为一周口碑电影榜&lt;/p&gt;
+&lt;p&gt;一周口碑电影榜：movie_weekly_best&lt;br&gt;
+一周口碑剧集榜：tv_weekly_best&lt;br&gt;
+华语口碑剧集榜 ：tv_chinese_best_weekly&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;豆瓣电影分类&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;举例: &lt;a class=&#34;link&#34; href=&#34;https://rsshub.app/douban/movie/classification/R/7.5/Netflix&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://rsshub.app/douban/movie/classification/R/7.5/Netflix&lt;/a&gt;,剧情,2020 &lt;/p&gt;
+&lt;p&gt;路由: /douban/movie/classification/:sort?/:score?/:tags?&lt;/p&gt;
+&lt;p&gt;参数:&lt;/p&gt;
+&lt;p&gt;sort, 可选 –&lt;br&gt;
+排序方式，默认为U&lt;/p&gt;
+&lt;p&gt;score, 可选 –&lt;br&gt;
+最低评分，默认不限制&lt;/p&gt;
+&lt;p&gt;tags, 可选 –&lt;br&gt;
+分类标签，多个标签之间用英文逗号分隔，常见的标签到豆瓣电影的分类页面查看，支持自定义标签&lt;/p&gt;
+&lt;p&gt;排序方式可选值如下&lt;/p&gt;
+&lt;p&gt;近期热门U&lt;br&gt;
+标记最多T&lt;br&gt;
+评分最高S&lt;br&gt;
+最近上映R&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;豆瓣电影人&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;举例: &lt;a class=&#34;link&#34; href=&#34;https://rsshub.app/douban/celebrity/1274261&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://rsshub.app/douban/celebrity/1274261&lt;/a&gt; &lt;/p&gt;
+&lt;p&gt;路由: /douban/celebrity/:id/:sort?&lt;/p&gt;
+&lt;p&gt;参数:&lt;/p&gt;
+&lt;p&gt;id, 必选 –&lt;br&gt;
+电影人 id&lt;/p&gt;
+&lt;p&gt;sort, 可选 –&lt;br&gt;
+排序方式，缺省为 time（时间排序），可为 vote （评价排序）&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;豆瓣小组&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;举例: &lt;a class=&#34;link&#34; href=&#34;https://rsshub.app/douban/group/camera&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://rsshub.app/douban/group/camera&lt;/a&gt; &lt;/p&gt;
+&lt;p&gt;路由: /douban/group/:groupid&lt;/p&gt;
+&lt;p&gt;参数:&lt;/p&gt;
+&lt;p&gt;groupid, 必选 –&lt;br&gt;
+豆瓣小组的 id&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;浏览发现&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;举例: &lt;a class=&#34;link&#34; href=&#34;https://rsshub.app/douban/explore&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://rsshub.app/douban/explore&lt;/a&gt; &lt;/p&gt;
+&lt;p&gt;路由: /douban/explore&lt;/p&gt;
+&lt;p&gt;参数: 无&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;浏览发现分栏目&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;举例: &lt;a class=&#34;link&#34; href=&#34;https://rsshub.app/douban/explore/column/2&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://rsshub.app/douban/explore/column/2&lt;/a&gt; &lt;/p&gt;
+&lt;p&gt;路由: /douban/explore_column/:id&lt;/p&gt;
+&lt;p&gt;参数:&lt;/p&gt;
+&lt;p&gt;id, 必选 –&lt;br&gt;
+分栏目id&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;新书速递&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;举例: &lt;a class=&#34;link&#34; href=&#34;https://rsshub.app/douban/book/latest&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://rsshub.app/douban/book/latest&lt;/a&gt; &lt;/p&gt;
+&lt;p&gt;路由: douban/book/latest&lt;/p&gt;
+&lt;p&gt;参数: 无&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;简书&#34;&gt;简书&lt;/h3&gt;
+&lt;p&gt;首页&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;举例: &lt;a class=&#34;link&#34; href=&#34;https://rsshub.app/jianshu/home&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://rsshub.app/jianshu/home&lt;/a&gt; &lt;/p&gt;
+&lt;p&gt;路由: /jianshu/home&lt;/p&gt;
+&lt;p&gt;参数: 无&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;热门&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;举例: &lt;a class=&#34;link&#34; href=&#34;https://rsshub.app/jianshu/trending/weekly&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://rsshub.app/jianshu/trending/weekly&lt;/a&gt; &lt;/p&gt;
+&lt;p&gt;路由: /jianshu/trending/:timeframe&lt;/p&gt;
+&lt;p&gt;参数:&lt;/p&gt;
+&lt;p&gt;timeframe, 必选 –&lt;br&gt;
+按周 weekly 或 按月 monthly&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;专题&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;举例: &lt;a class=&#34;link&#34; href=&#34;https://rsshub.app/jianshu/collection/xYuZYD&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://rsshub.app/jianshu/collection/xYuZYD&lt;/a&gt; &lt;/p&gt;
+&lt;p&gt;路由: /jianshu/collection/:id&lt;/p&gt;
+&lt;p&gt;参数:&lt;/p&gt;
+&lt;p&gt;id, 必选 –&lt;br&gt;
+专题 id, 可在专题页 URL 中找到&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;作者&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;举例: &lt;a class=&#34;link&#34; href=&#34;https://rsshub.app/jianshu/user/yZq3ZV&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://rsshub.app/jianshu/user/yZq3ZV&lt;/a&gt; &lt;/p&gt;
+&lt;p&gt;路由: /jianshu/user/:id&lt;/p&gt;
+&lt;p&gt;参数:&lt;/p&gt;
+&lt;p&gt;id, 必选 –&lt;br&gt;
+作者 id, 可在作者主页 URL 中找到&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;微博&#34;&gt;微博&lt;/h3&gt;
+&lt;p&gt;对于微博内容，在 routeParams 参数中以 query string 格式指定选项，可以控制输出的样式 &lt;/p&gt;
+&lt;p&gt;博主&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;举例: &lt;a class=&#34;link&#34; href=&#34;https://rsshub.app/weibo/user/1195230310&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://rsshub.app/weibo/user/1195230310&lt;/a&gt; &lt;/p&gt;
+&lt;p&gt;路由: /weibo/user/:uid/:routeParams?&lt;/p&gt;
+&lt;p&gt;参数:&lt;/p&gt;
+&lt;p&gt;uid, 必选 –&lt;br&gt;
+用户 id, 博主主页打开控制台执行 $CONFIG.oid 获取&lt;/p&gt;
+&lt;p&gt;routeParams, 可选 –&lt;br&gt;
+额外参数；请参阅上面的说明和表格；特别地，当 routeParams=1 时开启微博视频显示&lt;/p&gt;
+&lt;p&gt;部分博主仅登录可见，不支持订阅，可以通过打开 &lt;a class=&#34;link&#34; href=&#34;https://m.weibo.cn/u/:uid&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://m.weibo.cn/u/:uid&lt;/a&gt; 验证&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;关键词&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;举例: &lt;a class=&#34;link&#34; href=&#34;https://rsshub.app/weibo/keyword/DIYgod&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://rsshub.app/weibo/keyword/DIYgod&lt;/a&gt; &lt;/p&gt;
+&lt;p&gt;路由: /weibo/keyword/:keyword/:routeParams?&lt;/p&gt;
+&lt;p&gt;参数:&lt;/p&gt;
+&lt;p&gt;keyword, 必选 –&lt;br&gt;
+你想订阅的微博关键词&lt;/p&gt;
+&lt;p&gt;routeParams, 可选 –&lt;br&gt;
+额外参数；请参阅上面的说明和表格&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;热搜榜&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;举例: &lt;a class=&#34;link&#34; href=&#34;https://rsshub.app/weibo/search/hot&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://rsshub.app/weibo/search/hot&lt;/a&gt; &lt;/p&gt;
+&lt;p&gt;路由: /weibo/search/hot&lt;/p&gt;
+&lt;p&gt;参数: 无&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;超话&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;举例: &lt;a class=&#34;link&#34; href=&#34;https://rsshub.app/weibo/super_index/1008084989d223732bf6f02f75ea30efad58a9&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://rsshub.app/weibo/super_index/1008084989d223732bf6f02f75ea30efad58a9&lt;/a&gt; &lt;/p&gt;
+&lt;p&gt;路由: /weibo/super_index/:id/:routeParams?&lt;/p&gt;
+&lt;p&gt;参数:&lt;/p&gt;
+&lt;p&gt;id, 必选 –&lt;br&gt;
+超话ID&lt;/p&gt;
+&lt;p&gt;routeParams, 可选 –&lt;br&gt;
+额外参数；请参阅上面的说明和表格&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;个人时间线&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;举例: &lt;a class=&#34;link&#34; href=&#34;https://rsshub.app/weibo/timeline/3306934123&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://rsshub.app/weibo/timeline/3306934123&lt;/a&gt; &lt;/p&gt;
+&lt;p&gt;路由: /weibo/timeline/:uid/:feature?&lt;/p&gt;
+&lt;p&gt;参数:&lt;/p&gt;
+&lt;p&gt;uid, 必选 –&lt;br&gt;
+用户的uid&lt;/p&gt;
+&lt;p&gt;feature, 可选 –&lt;br&gt;
+过滤类型ID，0：全部、1：原创、2：图片、3：视频、4：音乐，默认为0。注意&lt;/p&gt;
+&lt;p&gt;需要对应用户打开页面进行授权生成 token 才能生成内容&lt;/p&gt;
+&lt;p&gt;自部署需要申请并配置微博 key，具体见部署文档&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;知乎&#34;&gt;知乎&lt;/h3&gt;
+&lt;p&gt;收藏夹&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;举例: &lt;a class=&#34;link&#34; href=&#34;https://rsshub.app/zhihu/collection/26444956&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://rsshub.app/zhihu/collection/26444956&lt;/a&gt; &lt;/p&gt;
+&lt;p&gt;路由: /zhihu/collection/:id&lt;/p&gt;
+&lt;p&gt;参数:&lt;/p&gt;
+&lt;p&gt;id, 必选 –&lt;br&gt;
+收藏夹 id, 可在收藏夹页面 URL 中找到&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;用户动态&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;举例: &lt;a class=&#34;link&#34; href=&#34;https://rsshub.app/zhihu/people/activities/diygod&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://rsshub.app/zhihu/people/activities/diygod&lt;/a&gt; &lt;/p&gt;
+&lt;p&gt;路由: /zhihu/people/activities/:id&lt;/p&gt;
+&lt;p&gt;参数:&lt;/p&gt;
+&lt;p&gt;id, 必选 –&lt;br&gt;
+作者 id, 可在用户主页 URL 中找到&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;用户回答&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;举例: &lt;a class=&#34;link&#34; href=&#34;https://rsshub.app/zhihu/people/answers/diygod&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://rsshub.app/zhihu/people/answers/diygod&lt;/a&gt; &lt;/p&gt;
+&lt;p&gt;路由: /zhihu/people/answers/:id&lt;/p&gt;
+&lt;p&gt;参数:&lt;/p&gt;
+&lt;p&gt;id, 必选 –&lt;br&gt;
+作者 id, 可在用户主页 URL 中找到&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;用户文章&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;举例: &lt;a class=&#34;link&#34; href=&#34;https://rsshub.app/zhihu/people/posts/dcjanus&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://rsshub.app/zhihu/people/posts/dcjanus&lt;/a&gt; &lt;/p&gt;
+&lt;p&gt;路由: /zhihu/people/posts/:id&lt;/p&gt;
+&lt;p&gt;参数:&lt;/p&gt;
+&lt;p&gt;id, 必选 –&lt;br&gt;
+作者 id, 可在用户主页 URL 中找到&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;专栏&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;举例: &lt;a class=&#34;link&#34; href=&#34;https://rsshub.app/zhihu/zhuanlan/googledevelopers&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://rsshub.app/zhihu/zhuanlan/googledevelopers&lt;/a&gt; &lt;/p&gt;
+&lt;p&gt;路由: /zhihu/zhuanlan/:id&lt;/p&gt;
+&lt;p&gt;参数:&lt;/p&gt;
+&lt;p&gt;id, 必选 –&lt;br&gt;
+专栏 id, 可在专栏主页 URL 中找到&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;知乎日报&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;举例: &lt;a class=&#34;link&#34; href=&#34;https://rsshub.app/zhihu/daily&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://rsshub.app/zhihu/daily&lt;/a&gt; &lt;/p&gt;
+&lt;p&gt;路由: /zhihu/daily&lt;/p&gt;
+&lt;p&gt;参数: 无&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;知乎日报 – 合集&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;举例: &lt;a class=&#34;link&#34; href=&#34;https://rsshub.app/zhihu/daily/section/2&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://rsshub.app/zhihu/daily/section/2&lt;/a&gt; &lt;/p&gt;
+&lt;p&gt;路由: /zhihu/daily/section/:sectionId&lt;/p&gt;
+&lt;p&gt;参数:&lt;/p&gt;
+&lt;p&gt;sectionId, 必选 –&lt;br&gt;
+合集 id, 可在 &lt;a class=&#34;link&#34; href=&#34;https://news-at.zhihu.com/api/7/sections&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://news-at.zhihu.com/api/7/sections&lt;/a&gt; 找到&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;知乎热榜&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;举例: &lt;a class=&#34;link&#34; href=&#34;https://rsshub.app/zhihu/hotlist&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://rsshub.app/zhihu/hotlist&lt;/a&gt; &lt;/p&gt;
+&lt;p&gt;路由: /zhihu/hotlist&lt;/p&gt;
+&lt;p&gt;参数: 无&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;知乎分类热榜&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;举例: &lt;a class=&#34;link&#34; href=&#34;https://rsshub.app/zhihu/hot&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://rsshub.app/zhihu/hot&lt;/a&gt; &lt;/p&gt;
+&lt;p&gt;路由: /zhihu/hot/:category?&lt;/p&gt;
+&lt;p&gt;参数:&lt;/p&gt;
+&lt;p&gt;category, 可选 –&lt;br&gt;
+分类，见下表，默认为全站&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;今日头条&#34;&gt;今日头条&lt;/h3&gt;
+&lt;p&gt;关键词&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;举例: &lt;a class=&#34;link&#34; href=&#34;https://rsshub.app/jinritoutiao/keyword/AI&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://rsshub.app/jinritoutiao/keyword/AI&lt;/a&gt; &lt;/p&gt;
+&lt;p&gt;路由: /jinritoutiao/keyword/:keyword&lt;/p&gt;
+&lt;p&gt;参数:&lt;/p&gt;
+&lt;p&gt;keyword, 必选 –&lt;br&gt;
+关键词&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;v2ex&#34;&gt;V2EX&lt;/h3&gt;
+&lt;p&gt;最热 / 最新主题&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;举例: &lt;a class=&#34;link&#34; href=&#34;https://rsshub.app/v2ex/topics/latest&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://rsshub.app/v2ex/topics/latest&lt;/a&gt; &lt;/p&gt;
+&lt;p&gt;路由: /v2ex/topics/:type&lt;/p&gt;
+&lt;p&gt;参数:&lt;/p&gt;
+&lt;p&gt;type, 必选 –&lt;br&gt;
+hot 或 latest&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;帖子&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;举例: &lt;a class=&#34;link&#34; href=&#34;https://rsshub.app/v2ex/post/584403&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://rsshub.app/v2ex/post/584403&lt;/a&gt; &lt;/p&gt;
+&lt;p&gt;路由: /v2ex/post/:postid&lt;/p&gt;
+&lt;p&gt;参数:&lt;/p&gt;
+&lt;p&gt;postid, 必选 –&lt;br&gt;
+帖子ID，在 URL 可以找到&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;标签&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;举例: &lt;a class=&#34;link&#34; href=&#34;https://rsshub.app/v2ex/tab/hot&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://rsshub.app/v2ex/tab/hot&lt;/a&gt; &lt;/p&gt;
+&lt;p&gt;路由: /v2ex/tab/:tabid&lt;/p&gt;
+&lt;p&gt;参数:&lt;/p&gt;
+&lt;p&gt;tabid, 必选 –&lt;br&gt;
+tab标签ID,在 URL 可以找到&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+        </item>
+        <item>
+        <title>tmux用法</title>
+        <link>https://whfox.ml/p/tmux%E7%94%A8%E6%B3%95/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>https://whfox.ml/p/tmux%E7%94%A8%E6%B3%95/</guid>
+        <description>&lt;h2 id=&#34;常用命令&#34;&gt;常用命令&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;创建并进入会话
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;tmux new -s &amp;lt;name&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;离开并关闭会话
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;exit&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;离开但保留会话
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;tmux detach
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;查询已有会话
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;tmux ls
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;重新进入会话
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;tmux attach -t &amp;lt;name&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;切换会话
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;tmux switch -t
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;重命名
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;tmux rename-session -t &amp;lt;name1&amp;gt; &amp;lt;name2&amp;gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;窗口相关ctrlb&#34;&gt;窗口相关(ctrl+b)&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;创建新窗口 c&lt;/li&gt;
+&lt;li&gt;列出所有窗口 w&lt;/li&gt;
+&lt;li&gt;后一个窗口 n&lt;/li&gt;
+&lt;li&gt;前一个窗口 p&lt;/li&gt;
+&lt;li&gt;查找窗口 f&lt;/li&gt;
+&lt;li&gt;重命名当前窗口 ,&lt;/li&gt;
+&lt;li&gt;关闭当前窗口 &amp;amp;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;常用快捷键-ctrlb&#34;&gt;常用快捷键 (ctrl+b)&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;水平分割  “&lt;/li&gt;
+&lt;li&gt;垂直分割 %&lt;/li&gt;
+&lt;li&gt;切换窗格 o&lt;/li&gt;
+&lt;li&gt;选择窗格 q&lt;/li&gt;
+&lt;li&gt;关闭窗格 x&lt;/li&gt;
+&lt;li&gt;切换布局 ⍽&lt;/li&gt;
+&lt;li&gt;与上一个窗格交换位置 {&lt;/li&gt;
+&lt;li&gt;与下一个窗格交换位置 }&lt;/li&gt;
+&lt;li&gt;切换窗格最大化/最小化 z&lt;/li&gt;
+&lt;li&gt;同步窗格 : setw synchronize-panes&lt;/li&gt;
+&lt;li&gt;显示数字时钟&lt;/li&gt;
+&lt;li&gt;退出保留会话 d&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;调整窗格尺寸ctrlb&#34;&gt;调整窗格尺寸(ctrl+b)&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;PREFIX : resize-pane -D          当前窗格向下扩大 1 格&lt;/li&gt;
+&lt;li&gt;PREFIX : resize-pane -U          当前窗格向上扩大 1 格&lt;/li&gt;
+&lt;li&gt;PREFIX : resize-pane -L          当前窗格向左扩大 1 格&lt;/li&gt;
+&lt;li&gt;PREFIX : resize-pane -R          当前窗格向右扩大 1 格&lt;/li&gt;
+&lt;li&gt;PREFIX : resize-pane -D 20       当前窗格向下扩大 20 格&lt;/li&gt;
+&lt;li&gt;PREFIX : resize-pane -t 2 -L 20  编号为 2 的窗格向左扩大 20 格&lt;/li&gt;
+&lt;/ul&gt;</description>
+        </item>
+        <item>
+        <title>如何选择开源许可证？</title>
+        <link>https://whfox.ml/p/%E5%A6%82%E4%BD%95%E9%80%89%E6%8B%A9%E5%BC%80%E6%BA%90%E8%AE%B8%E5%8F%AF%E8%AF%81/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>https://whfox.ml/p/%E5%A6%82%E4%BD%95%E9%80%89%E6%8B%A9%E5%BC%80%E6%BA%90%E8%AE%B8%E5%8F%AF%E8%AF%81/</guid>
+        <description>&lt;p&gt;如何选择开源许可证？&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://zhuanlan.zhihu.com/p/30186006&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;阮一峰 开源许可证教程 - 知乎&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;图片转自 &lt;a class=&#34;link&#34; href=&#34;https://www.ruanyifeng.com/blog/2011/05/how_to_choose_free_software_licenses.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;阮一峰的网络日志&lt;/a&gt;
+&lt;img src=&#34;http://tva1.sinaimg.cn/large/007aNvkTgy1h7hopia2qbj318g0rse2p.jpg&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;阮一峰&#34;
+	
+	
+&gt;&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>树莓派2b无屏装centos</title>
+        <link>https://whfox.ml/p/%E6%A0%91%E8%8E%93%E6%B4%BE2b%E6%97%A0%E5%B1%8F%E8%A3%85centos/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>https://whfox.ml/p/%E6%A0%91%E8%8E%93%E6%B4%BE2b%E6%97%A0%E5%B1%8F%E8%A3%85centos/</guid>
+        <description>&lt;p&gt;无屏幕、无网线、根目录wpa_supplicant失效，甚至没电脑也可以实现。&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;以前跑树莓派一直是用的ubuntu和raspbian，突然想试试centos。因为我没有单独的显示屏，往常格式化写镜像之后，都是根目录写入ssh和wpa_supplicant，开机自动联网获得树莓派ip就能ssh命令行登录去配置。之后问题就来了，当我写入centos后它并没有连上wpa_supplicant中的wifi，具体原因至今也没想明白&amp;hellip;
+　　&lt;/p&gt;
+&lt;p&gt;那么是否有其他解决办法呢？
+　　&lt;/p&gt;
+&lt;p&gt;答案是手机数据线连树莓派，并开启USB数据共享。此外需要用到termux软件，输入ip neigh获得树莓派ip，再用手机ssh进入centos。后续配网则不再赘述，顺便推荐一下nmtui，自带GUI设置起来非常方便。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;yum install NetworkManager-tui   
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;systemctl start NetworkManager
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;nmtui   //进入GUI界面
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description>
+        </item>
+        <item>
+        <title>深度学习常用模型</title>
+        <link>https://whfox.ml/p/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E5%B8%B8%E7%94%A8%E6%A8%A1%E5%9E%8B/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>https://whfox.ml/p/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E5%B8%B8%E7%94%A8%E6%A8%A1%E5%9E%8B/</guid>
+        <description>&lt;p&gt;深度学习是解决问题的一系列模型与方法。主流的深度学习模型有CNN、RNN（LSTM）、transformer、VAE、GAN等。但深度学习模型不是深度学习领域中唯一的研究方向，且不一定是最重要的研究方向。除了模型之外，比较重要的还有优化算法、损失函数、采样方法等。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;TOC
+{:toc}&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;cnn-卷积神经网络&#34;&gt;CNN 卷积神经网络&lt;/h1&gt;
+&lt;h2 id=&#34;基本原理&#34;&gt;基本原理&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;卷积层 – 主要作用是保留图片的特征&lt;/li&gt;
+&lt;li&gt;池化层 – 主要作用是把数据降维，可以有效的避免过拟合&lt;/li&gt;
+&lt;li&gt;全连接层 – 根据不同任务输出我们想要的结果&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;特点&#34;&gt;特点&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;能够将大数据量的图片有效的降维成小数据量 (并不影响结果)&lt;/li&gt;
+&lt;li&gt;能够保留图片的特征，类似人类的视觉原理&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;实际应用&#34;&gt;实际应用&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;图片分类、检索&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;目标定位检测&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;目标分割&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;人脸识别&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;骨骼识别&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h1 id=&#34;rnn-循环神经网络&#34;&gt;RNN 循环神经网络&lt;/h1&gt;
+&lt;h2 id=&#34;基本原理-1&#34;&gt;基本原理&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;传统神经网络的结构：输入层 – 隐藏层 – 输出层。RNN 跟传统神经网络最大的区别在于每次都会将前一次的输出结果，带到下一次的隐藏层中，一起训练。&lt;/li&gt;
+&lt;li&gt;RNN 到 LSTM – 长短期记忆网络保留较长序列数据中的「重要信息」，忽略不重要的信息&lt;/li&gt;
+&lt;li&gt;LSTM 到 GRU - 保留了 LSTM 划重点，遗忘不重要信息的特点，在 long-term 传播的时候也不会被丢失。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;特点-1&#34;&gt;特点&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;RNN 有短期记忆问题，无法处理很长的输入序列&lt;/li&gt;
+&lt;li&gt;训练 RNN 需要投入极大的成本&lt;/li&gt;
+&lt;li&gt;长期信息可以有效的保留（GRU）&lt;/li&gt;
+&lt;li&gt;挑选重要信息保留，不重要的信息会选择“遗忘”（LSTM）&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;实际应用-1&#34;&gt;实际应用&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;文本生成&lt;/li&gt;
+&lt;li&gt;语音识别&lt;/li&gt;
+&lt;li&gt;机器翻译&lt;/li&gt;
+&lt;li&gt;生成图像描述&lt;/li&gt;
+&lt;li&gt;视频标记&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h1 id=&#34;gans-生成对抗网络&#34;&gt;GANs 生成对抗网络&lt;/h1&gt;
+&lt;h2 id=&#34;基本原理-2&#34;&gt;基本原理&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;生成对抗网络（GAN）由 2 个重要的部分构成：&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol&gt;
+&lt;li&gt;生成器 (Generator)：通过机器生成数据（大部分情况下是图像），目的是“骗过”判别器&lt;/li&gt;
+&lt;li&gt;判别器 (Discriminator)：判断这张图像是真实的还是机器生成的，目的是找出生成器做的“假数据”&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;训练过程&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol&gt;
+&lt;li&gt;第一阶段：固定「判别器 D」，训练「生成器 G」&lt;/li&gt;
+&lt;li&gt;第二阶段：固定「生成器 G」，训练「判别器 D」&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;特点-2&#34;&gt;特点&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;优势&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol&gt;
+&lt;li&gt;能更好建模数据分布（图像更锐利、清晰）&lt;/li&gt;
+&lt;li&gt;理论上，GANs 能训练任何一种生成器网络。其他的框架需要生成器网络有一些特定的函数形式，比如输出层是高斯的。&lt;/li&gt;
+&lt;li&gt;无需利用马尔科夫链反复采样，无需在学习过程中进行推断，没有复杂的变分下界，避开近似计算棘手的概率的难题。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;缺陷&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol&gt;
+&lt;li&gt;难训练，不稳定。生成器和判别器之间需要很好的同步，但是在实际训练中很容易 D 收敛，G 发散。D/G 的训练需要精心的设计。&lt;/li&gt;
+&lt;li&gt;模式缺失（Mode Collapse）问题。GANs 的学习过程可能出现模式缺失，生成器开始退化，总是生成同样的样本点，无法继续学习。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;实际应用-2&#34;&gt;实际应用&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;生成图像数据集&lt;/li&gt;
+&lt;li&gt;生成人脸照片&lt;/li&gt;
+&lt;li&gt;生成照片、漫画人物&lt;/li&gt;
+&lt;li&gt;图像到图像的转换&lt;/li&gt;
+&lt;li&gt;文字到图像的转换&lt;/li&gt;
+&lt;li&gt;语意 – 图像 – 照片的转换&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h1 id=&#34;rl-深度强化学习&#34;&gt;RL 深度强化学习&lt;/h1&gt;
+&lt;h2 id=&#34;基本原理-3&#34;&gt;基本原理&lt;/h2&gt;
+&lt;p&gt;强化学习是从动物学习、参数扰动自适应控制等理论发展而来，其基本原理是：如果 Agent 的某个行为策略导致环境正的奖赏 (强化信号)，那么 Agent 以后产生这个行为策略的趋势便会加强。Agent 的目标是在每个离散状态发现最优策略以使期望的折扣奖赏和最大。&lt;/p&gt;
+&lt;h2 id=&#34;特点-3&#34;&gt;特点&lt;/h2&gt;
+&lt;p&gt;RL 与其他机器学习算法不同的地方在于：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;没有监督者，只有一个 Reward 信号；&lt;/li&gt;
+&lt;li&gt;反馈是延迟的，不是立即生成的；&lt;/li&gt;
+&lt;li&gt;强化学习是序列学习，时间在强化学习中具有重要的意义；&lt;/li&gt;
+&lt;li&gt;Agent 的行为会影响以后所有的决策。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;实际应用-3&#34;&gt;实际应用&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;智能控制机器人及分析预测&lt;/li&gt;
+&lt;li&gt;自动驾驶，推荐，路径优化&lt;/li&gt;
+&lt;/ol&gt;</description>
         </item>
         
     </channel>

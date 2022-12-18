@@ -2,9 +2,41 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Categories on Whfox&#39;s Blog</title>
-        <link>http://example.org/categories/</link>
+        <link>https://whfox.ml/categories/</link>
         <description>Recent content in Categories on Whfox&#39;s Blog</description>
         <generator>Hugo -- gohugo.io</generator>
-        <language>zh-cn</language><atom:link href="http://example.org/categories/index.xml" rel="self" type="application/rss+xml" />
+        <language>zh-CN</language><atom:link href="https://whfox.ml/categories/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>DL</title>
+        <link>https://whfox.ml/categories/dl/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>https://whfox.ml/categories/dl/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Fragments</title>
+        <link>https://whfox.ml/categories/fragments/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>https://whfox.ml/categories/fragments/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Linux</title>
+        <link>https://whfox.ml/categories/linux/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>https://whfox.ml/categories/linux/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>RSS</title>
+        <link>https://whfox.ml/categories/rss/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>https://whfox.ml/categories/rss/</guid>
+        <description></description>
+        </item>
+        
     </channel>
 </rss>
