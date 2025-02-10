@@ -1,5 +1,4 @@
 # Whfox's website
 Glad to see you :)
 
-[`https://whfox.github.io`](https://whfox.github.io)  
-
+[`https://blog.whfox.asia`](https://blog.whfox.asia)  
