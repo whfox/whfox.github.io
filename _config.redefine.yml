@@ -17,7 +17,7 @@ info:
   # Author name
   author: whfox
   # Site URL
-  url: https://blog.whfox.asia
+  url: https://whfox.qzz.io
 # BASIC INFORMATION <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< end
 
 
@@ -132,7 +132,7 @@ home_banner:
   # Home banner subtitle
   subtitle:
     text: ["welcome to my website"] # subtitle text, array
-    hitokoto:  # Ò»ÑÔÅäÖÃ
+    hitokoto:  # Ã’Â»Ã‘Ã”Ã…Ã¤Ã–Ãƒ
       enable: false # Whether to enable hitokoto
       show_author: false # Whether to show author
       api: https://v1.hitokoto.cn # API URL, can add types, see https://developer.hitokoto.cn/sentence/#%E5%8F%A5%E5%AD%90%E7%B1%BB%E5%9E%8B-%E5%8F%82%E6%95%B0
@@ -330,7 +330,7 @@ articles:
     # Whether to enable article recommendation
     enable: false
     # Article recommendation title
-    title: ÍÆ¼öÔÄ¶Á
+    title: ÃÃ†Â¼Ã¶Ã”Ã„Â¶Ã
     # Max number of articles to display
     limit: 3
     # Max number of articles to display mobile
